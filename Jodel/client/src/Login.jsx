@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
+
 const styles = theme => ({
 	center: {
 		display: 'flex',
@@ -49,6 +50,7 @@ class Login extends React.Component {
 			username: '',
 			showPassword: false,
 			loginButtonDisabled: true,
+			passwordWrong: false,
 		};		
 	}
 	
@@ -83,7 +85,8 @@ class Login extends React.Component {
 		let tid = data.id;
 		if ( tid !== 0 ) {
 			this.props.authorized();
-		}
+			}
+			else{this.setState({passwordWrong: true });}
     }
 
 	handleLoginSubmit = ( event ) => {
@@ -128,6 +131,7 @@ class Login extends React.Component {
 					onChange={this.handleChange}
 					endAdornment={
 						<InputAdornment position="end">
+
 						<IconButton
 							aria-label="toggle password visibility"
 							onClick={this.handleClickShowPassword}
@@ -139,6 +143,9 @@ class Login extends React.Component {
 					}
 					/>
 				</FormControl>
+				<font className={classes.passwordWrong} face="Arial" color="red">
+                {this.state.passwordWrong ? "Username or password is wrong": ""}
+                </font>
 				<div className={classes.buttonRightAlign}>
 					<Button variant="contained" color="primary" type="submit" value="submit" 
 							disabled={this.state.loginButtonDisabled}>
@@ -151,6 +158,5 @@ class Login extends React.Component {
 		);
 	}
 }
-
 export default withStyles(styles)(Login);
 
