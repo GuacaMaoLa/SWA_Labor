@@ -29,7 +29,6 @@ public class Voting implements Serializable {
     @Id
     @SequenceGenerator(name = "voteSeq", sequenceName = "ZSEQ_VOTE_ID", allocationSize = 1, initialValue = 10)
     @GeneratedValue(generator = "voteSeq")
-	private Long id;
 
 	@Column(name = "id")
 	private Long id;
