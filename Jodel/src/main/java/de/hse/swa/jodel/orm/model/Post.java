@@ -16,7 +16,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
-
+import java.util.Date;
 // import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
@@ -51,7 +51,7 @@ public class Post implements Serializable {
     @Column(name = "authorId")
     private Long authorId;
 
-    ublic Post() {
+    public Post() {
     }
 
     public Post(String text, double longitude, double latitude, Long userId) {

@@ -16,7 +16,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
-
+import java.util.Date;
 //import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 //import com.fasterxml.jackson.annotation.JsonIgnore;
 //import com.fasterxml.jackson.annotation.ObjectIdGenerators;

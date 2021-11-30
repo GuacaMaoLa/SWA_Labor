@@ -16,7 +16,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
-
+import java.util.Date;
 
 /**
  * The persistent class for the VOTING database table.
