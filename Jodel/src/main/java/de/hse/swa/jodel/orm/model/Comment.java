@@ -1,35 +1,25 @@
-/*========================================================================*
- *                                                                        *
- * This software is governed by the GPL version 2.                        *
- *                                                                        *
- * Copyright: Joerg Friedrich, University of Applied Sciences Esslingen   *
- *                                                                        *
- * $Id:$
- *                                                                        *
- *========================================================================*/
 package de.hse.swa.jodel.orm.model;
 
-import java.io.Serializable;
-
+import java.util.Date;
+import javax.json.bind.annotation.JsonbAnnotation;
+import javax.json.bind.annotation.JsonbNillable;
+import javax.json.bind.annotation.JsonbTransient;
+import javax.json.bind.annotation.JsonbVisibility;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
-import java.util.Date;
-//import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-//import com.fasterxml.jackson.annotation.JsonIgnore;
-//import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import javax.persistence.Table;
 
 
-/**
- * The persistent class for the `COMMENT` database table.
- * 
- */
 @Entity
-public class Comment implements Serializable {
-	private static final long serialVersionUID = 1L;
-	
+@Table(name = "Comment")
+public class Comment {
+
     @Id
     @SequenceGenerator(name = "commentSeq", sequenceName = "ZSEQ_COMMENT_ID", allocationSize = 1, initialValue = 10)
     @GeneratedValue(generator = "commentSeq")
