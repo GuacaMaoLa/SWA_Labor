@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.hse.swa.jodel.orm.UserDaoTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-01-11T20:55:30" hostname="DESKTOP-2F0Q233" time="1.234">
+  <properties/>
+  <testcase name="addUser_1()" classname="de.hse.swa.jodel.orm.UserDaoTest" time="1.103"/>
+  <testcase name="addUser_2()" classname="de.hse.swa.jodel.orm.UserDaoTest" time="0.068"/>
+  <testcase name="checkLogin_1()" classname="de.hse.swa.jodel.orm.UserDaoTest" time="0.058"/>
+  <system-out><![CDATA[2022-01-11 21:55:30,002 INFO  [io.quarkus] (Test worker) Quarkus 1.9.0.CR1 on JVM started in 7.271s. Listening on: http://0.0.0.0:8081
+2022-01-11 21:55:30,007 INFO  [io.quarkus] (Test worker) Profile test activated. 
+2022-01-11 21:55:30,007 INFO  [io.quarkus] (Test worker) Installed features: [agroal, cdi, hibernate-orm, jdbc-mysql, mutiny, narayana-jta, resteasy, resteasy-jsonb, smallrye-context-propagation]
+id: 10
+Username: firstUserName
+id: 12
+Username: secondUserName
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

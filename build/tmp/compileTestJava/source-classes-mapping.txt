@@ -1,0 +1,16 @@
+de/hse/swa/jodel/orm/CommentDaoTest.java
+ de.hse.swa.jodel.orm.CommentDaoTest
+de/hse/swa/jodel/orm/PostResourceTest.java
+ de.hse.swa.jodel.orm.PostResourceTest
+de/hse/swa/jodel/orm/UserResourceTest.java
+ de.hse.swa.jodel.orm.UserResourceTest
+de/hse/swa/jodel/orm/UserDaoTest.java
+ de.hse.swa.jodel.orm.UserDaoTest
+de/hse/swa/jodel/orm/VotingResourceTest.java
+ de.hse.swa.jodel.orm.VotingResourceTest
+de/hse/swa/jodel/orm/CommentResourceTest.java
+ de.hse.swa.jodel.orm.CommentResourceTest
+de/hse/swa/jodel/orm/VotingDaoTest.java
+ de.hse.swa.jodel.orm.VotingDaoTest
+de/hse/swa/jodel/orm/PostDaoTest.java
+ de.hse.swa.jodel.orm.PostDaoTest
