@@ -1,2 +1,0 @@
-de/hse/swa/jodel/orm/UserDaoTest.java
- de.hse.swa.jodel.orm.UserDaoTest
